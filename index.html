@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Migrated App</title>
+    <title>Notes</title>
+    <!-- MIGRATION_NOTE: the jQuery 3.7.1 CDN <script> was removed on purpose. React renders the UI now, so jQuery is no longer needed. -->
   </head>
   <body>
+    <!-- MIGRATION_NOTE: the static <main> markup (h1, #note-form, #title, #notes, #count) moved to src/pages/NotesPage.tsx. app.js is replaced by /src/main.tsx. -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
