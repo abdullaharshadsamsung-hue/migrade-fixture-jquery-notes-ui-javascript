@@ -1,13 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-// TODO: mount migrated page routes here
-// import HomePage from './pages/HomePage';
+import NotesPage from './pages/NotesPage';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/" element={<NotesPage />} />
       </Routes>
     </BrowserRouter>
   );
